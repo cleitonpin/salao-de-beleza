@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Landing from './pages/Landing'
+import Main from './pages/Main'
 
 const Routes = () => {
 
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={Landing}/>
+                <Route exact path="/" component={Main}/>
             </Switch>
         </BrowserRouter>
     )

@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export const links = [
     {
         id: 1,
-        url: '/',
+        url: '#promotions',
         text: 'home',
     },
     {

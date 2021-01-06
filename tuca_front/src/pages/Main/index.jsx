@@ -1,14 +1,17 @@
 import React from 'react';
+
 import Navbar from '../../components/Navbar';
+import Slider from '../../components/Slider';
 
 
-const Landing = (props) => {
+const Main = (props) => {
 
     return (
         <>
             <Navbar />
+            <Slider />
         </>
     )
 }
 
-export default Landing;
+export default Main;
