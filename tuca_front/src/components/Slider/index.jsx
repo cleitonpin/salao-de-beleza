@@ -28,13 +28,13 @@ export default function Slider() {
     }
 
     useEffect(() => {
-      const lastIndex = slides.length - 1
-      if (index < 0) {
-        setIndex(lastIndex)
-      }
-      if (index > lastIndex) {
-        setIndex(0)
-      }
+        const lastIndex = slides.length - 1
+        if (index < 0) {
+            setIndex(lastIndex)
+        }
+        if (index > lastIndex) {
+            setIndex(0)
+        }
     }, [index]);
 
     return (
