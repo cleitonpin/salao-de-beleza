@@ -50,7 +50,7 @@ export default function Navbar() {
                         const { id, url, icon } = socialIcon;
                         return (
                             <li key={id}>
-                                <a href={url}>{icon}</a>
+                                <a href={url} target='blank'>{icon}</a>
                             </li>
                         );
                     })}
