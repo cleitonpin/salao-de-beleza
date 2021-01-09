@@ -2,16 +2,17 @@ import React from 'react';
 
 import Navbar from '../../components/Navbar';
 import Slider from '../../components/Slider';
+import AboutUs from '../../components/AboutUs';
+import Appointments from '../../components/Appointments';
 
 
-const Main = (props) => {
-
+export default function Main() {
     return (
         <>
             <Navbar />
             <Slider />
+            <AboutUs />
+            <Appointments />
         </>
     )
 }
-
-export default Main;
