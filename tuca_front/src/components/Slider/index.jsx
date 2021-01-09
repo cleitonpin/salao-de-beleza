@@ -38,7 +38,7 @@ export default function Slider() {
     }, [index]);
 
     return (
-        <section className='section' id='promotions'>
+        <section className='section' id='promotions' style={{ marginTop: 30 }}>
             <div className='title'>
                 <h2>
                     <span>/</span>Promoções
