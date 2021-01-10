@@ -20,7 +20,7 @@ export default function Appointments() {
     function handleSubmitForm(e) {
         e.preventDefault();
 
-        api.post('agendar', {
+        const response = api.post('/agendar', {
             data,
             nome_cliente: nome,
             horario: hora,
@@ -28,6 +28,7 @@ export default function Appointments() {
             confirmado: true
         });
 
+        console.log(response.data);
         alert('Agendamento realizado com sucesso!');
         cleanValues();
     }
