@@ -89,3 +89,11 @@ nav {
       color: var(--clr-primary-7);
     }
   }
+
+
+
+.dados h3 {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}

@@ -15,8 +15,8 @@ routes
     // routes cliente
     .post('/', ClienteController.create)
     .get('/', ClienteController.index)
-    .put('/:id', FuncionarioController.update)
-    .delete('/:id', FuncionarioController.delete)
+    .put('/:id', ClienteController.update)
+    .delete('/:id', ClienteController.delete)
     .put('/cliente/password/:id', ClienteController.alterPassword)
 
     // routes funcionario

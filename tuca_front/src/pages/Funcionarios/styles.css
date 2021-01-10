@@ -1,0 +1,8 @@
+form .div-flex {
+    display: flex;
+}
+
+form .div-flex div {
+    width: 90%;
+
+}

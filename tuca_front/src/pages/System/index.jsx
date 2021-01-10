@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/secador.svg';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTrash, FaPen, FaPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
@@ -17,7 +17,13 @@ export default function System() {
                 setUsers(response.data)
             }) ;
     }, [])
-    console.log(users);
+    
+    async function deleteClient(id) {
+        api.delete(`/${id}`).then(data => {
+            window.location.reload();
+        });
+    };
+
     return (
         <>
             <div>
@@ -35,35 +41,58 @@ export default function System() {
                                 <li>
                                     <Link to="#">Fornecedores</Link>
                                     <Link to="#">Funcionarios</Link>
-                                    <Link to="#">Clientes</Link>
+                                    <Link to="/admin/private">Clientes</Link>
+                                    <Link to="/admin/servicos">Serviços</Link>
                                 </li>
                                     
                             </ul>
                         </div>
                     </div>
                 </nav>
-                <table className="table">
+            
+            <div className="container dados">
+                <h3>Clientes cadastrados </h3>
+                <table className="table table-striped table-bordered center">
                     <thead className="thead-light">
                         <tr>
-                            <th scope="col">Nomes</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Telefone</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Edit</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">RG</th>
+                            <th scope="col">Logradouro</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Ações</th>
                         </tr>
                     </thead>
                     <tbody>
                     {users.map((user, key) => {
-                                    return (
-                                        <tr key={key}>
-                                            <th scope="row">{user.nome}</th>
-                                            <td>{user.telefone}</td>
-                                            <td>{user.email}</td>
+                        return (
+                            <tr key={key}>
+                                <th scope="row">{user.nome}</th>
+                                <td>{user.telefone}</td>
+                                <td>{user.email}</td>
+                                <td>{user.cpf}</td>
+                                <td>{user.rg}</td>
+                                <td>{user.logradouro}</td>
+                                <td>{user.bairro}</td>
+                                <td>{user.estado}</td>
+                                <td>{user.cidade}</td>
                                 
-                                        </tr>
-                                    )
-                                })}
+                                <td>
+                                    <div style={{ display: 'flex' }}>
+                                        <button className="btn btn-danger mr-2" onClick={() => deleteClient(user.id)}><FaTrash/></button> {' '} 
+                                        <Link to="/admin/edit" className="btn btn-warning mr-2" ><FaPen/></Link>
+                                    </div>
+                                </td>
+                            </tr>
+                        )
+                    })}
                     </tbody>
                 </table>
-
+            </div>
             </div>
 
         </>
