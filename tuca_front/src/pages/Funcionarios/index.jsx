@@ -169,7 +169,7 @@ export default function Funcionarios() {
                                 
                                 <li>
                                     <Link to="#">Fornecedores</Link>
-                                    <Link to="#">Funcionarios</Link>
+                                    <Link to="/admin/funcionarios">Funcionarios</Link>
                                     <Link to="/admin/private">Clientes</Link>
                                     <Link to="/admin/servicos">Serviços</Link>
                                 </li>

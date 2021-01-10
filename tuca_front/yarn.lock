@@ -9318,7 +9318,11 @@ react-scripts@4.0.1:
   optionalDependencies:
     fsevents "^2.1.3"
 
-<<<<<<< HEAD
+react-simple-cep-mask@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/react-simple-cep-mask/-/react-simple-cep-mask-0.1.4.tgz#84a2e327a7ba7e61a9c0259f718d6e2b98fa3fa6"
+  integrity sha512-hmC6EjFCznwmco+cj6RdhABAMKLML5uWFgd/jgLja6vYmDitncAEgRvXMnUGkBSTNKWC1Pxc5Ye18HeIumZ+fg==
+
 react-transition-group@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
@@ -9328,12 +9332,6 @@ react-transition-group@^4.4.0:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
-=======
-react-simple-cep-mask@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/react-simple-cep-mask/-/react-simple-cep-mask-0.1.4.tgz#84a2e327a7ba7e61a9c0259f718d6e2b98fa3fa6"
-  integrity sha512-hmC6EjFCznwmco+cj6RdhABAMKLML5uWFgd/jgLja6vYmDitncAEgRvXMnUGkBSTNKWC1Pxc5Ye18HeIumZ+fg==
->>>>>>> 4ba3156827f8f87196424a1afc633af2ae090c14
 
 react@^17.0.1:
   version "17.0.1"
