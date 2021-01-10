@@ -16,6 +16,11 @@ export const links = [
         url: '#agendamentos',
         text: 'Agendamentos',
     },
+    {
+        id: 4,
+        url: '/registrar',
+        text: 'Cadastre-se'
+    }
 ];
 
 export const social = [

@@ -14,17 +14,17 @@ export default function Appointments() {
                 <form action="">
                     <h2>Agende seu horário</h2>
 
-                    <div class="input">
+                    <div className="input">
                         <input required type="text" />
                         <label>Nome</label>
                     </div>
 
-                    <div class="input">
+                    <div className="input">
                         <input required type="text" />
                         <label>Horário</label>
                     </div>
 
-                    <div class="input">
+                    <div className="input">
                         <input required type="text" />
                         <label>Dia da Semana</label>
                     </div>

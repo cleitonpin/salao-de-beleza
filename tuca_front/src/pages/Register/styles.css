@@ -1,0 +1,18 @@
+.ambiente {
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.ambiente form .div-flex {
+    display: flex;
+}
+
+.ambiente form .div-flex div {
+    width: 90%;
+
+}

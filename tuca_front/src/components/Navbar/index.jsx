@@ -4,6 +4,7 @@ import { links, social } from './links';
 import logo from '../../assets/secador.svg';
 
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
@@ -39,7 +40,7 @@ export default function Navbar() {
                             const { id, url, text } = link;
                             return (
                                 <li key={id}>
-                                    <a href={url}>{text}</a>
+                                    <Link to={url}>{text}</Link>
                                 </li>
                             );
                         })}
