@@ -2,8 +2,7 @@ const Knex = require("knex");
 
 exports.up = (knex = Knex) => knex.schema.createTable('agendamento', (t) => {
     t.increments('id').primary();
-    t.integer('cliente_id').unsigned(); 
-    t.foreign('cliente_id').references('clientes.id');
+    t.string('nome_cliente').notNullable();
     t.integer('servico_id').unsigned();
     t.foreign('servico_id').references('servicos.id');
     t.string('horario').notNullable();

@@ -18,8 +18,24 @@ div.input {
   position: relative;
 }
 
-input,
-button {
+.submit-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--clr-primary-4);
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+input {
   /* Reset appearance */
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -27,8 +43,8 @@ button {
 
 
   width: 100%;
-  padding: 16px 0;
-  border:none;
+  padding: 15px 0;
+  border: none;
   border-bottom: 1px solid var(--clr-primary-4);
   background-color: transparent;
   outline: none;
@@ -41,12 +57,25 @@ input ~ label {
   top: 16px;
   left: 0;
   color: var(--clr-primary-4);
-  transition: 0.4s;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-  transform: translateY(-22px);
+  transform: translateY(-20px);
   font-size: 0.8em;
   letter-spacing: 0.1em;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.select > label {
+  color: var(--clr-primary-4);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.select select {
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--clr-primary-4);
 }
