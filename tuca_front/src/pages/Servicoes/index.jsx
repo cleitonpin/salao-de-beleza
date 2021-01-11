@@ -93,7 +93,7 @@ export default function Servico() {
                             <ul className='links'>
                                 
                                 <li>
-                                    <Link to="#">Fornecedores</Link>
+                                    <Link to="/admin/fornecedores">Fornecedores</Link>
                                     <Link to="/admin/funcionarios">Funcionarios</Link>
                                     <Link to="/admin/private">Clientes</Link>
                                     <Link to="/admin/servicos">Serviços</Link>
